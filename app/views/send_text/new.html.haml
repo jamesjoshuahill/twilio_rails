@@ -1,7 +1,9 @@
-%h1 Send new text
-= form_for :text do |f|
-  = f.label :number_to_send_to, 'Phone number to send to'
-  = f.text_field :number_to_send_to
-  = f.label :message
-  = f.text_field :message
-  = f.submit 'Send text'
+%h1 Send a text
+= form_for :text, html: { class: 'form-inline' } do |f|
+  .form-group
+    = f.label :number_to_send_to, 'To'
+    = f.text_field :number_to_send_to, placeholder: 'phone number', class: 'form-control'
+  .form-group
+    = f.label :message, 'saying'
+    = f.text_field :message, placeholder: 'something', size: '60', class: 'form-control'
+  = f.submit 'Send text', class: 'btn btn-lg btn-primary'

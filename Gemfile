@@ -33,6 +33,11 @@ gem 'haml'
 # Twilio to send SMS messages
 gem 'twilio-ruby'
 
+# Twitter Bootstrap for styling
+gem 'twitter-bootstrap-rails',
+     github: 'seyhunak/twitter-bootstrap-rails',
+     branch: 'bootstrap3'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
