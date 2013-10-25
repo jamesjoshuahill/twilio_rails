@@ -1,0 +1,7 @@
+%h1 Send new text
+= form_for :text do |f|
+  = f.label :number_to_send_to, 'Phone number to send to'
+  = f.text_field :number_to_send_to
+  = f.label :message
+  = f.text_field :message
+  = f.submit 'Send text'

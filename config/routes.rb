@@ -1,4 +1,9 @@
 TwilioRails::Application.routes.draw do
+
+  root to: 'send_text#new'
+
+  post '/', to: 'send_text#send_text_message'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
