@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Haml for templating haiku
 gem 'haml'
 
+# Twilio to send SMS messages
+gem 'twilio-ruby'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
